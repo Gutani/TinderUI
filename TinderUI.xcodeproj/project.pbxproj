@@ -11,6 +11,11 @@
 		42D66EF227BBBA72006146BE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D66EF127BBBA72006146BE /* ContentView.swift */; };
 		42D66EF427BBBA73006146BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42D66EF327BBBA73006146BE /* Assets.xcassets */; };
 		42D66EF727BBBA73006146BE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42D66EF627BBBA73006146BE /* Preview Assets.xcassets */; };
+		42D66F0327BBE214006146BE /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D66F0227BBE214006146BE /* CardView.swift */; };
+		42D66F0527BBE369006146BE /* ModelCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D66F0427BBE369006146BE /* ModelCardView.swift */; };
+		42D66F0727BBE469006146BE /* CardVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D66F0627BBE469006146BE /* CardVM.swift */; };
+		42D66F0927BC081D006146BE /* TopBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D66F0827BC081D006146BE /* TopBarView.swift */; };
+		42D66F0B27BC0E0C006146BE /* BottomBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D66F0A27BC0E0C006146BE /* BottomBarView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +24,11 @@
 		42D66EF127BBBA72006146BE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		42D66EF327BBBA73006146BE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		42D66EF627BBBA73006146BE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		42D66F0227BBE214006146BE /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		42D66F0427BBE369006146BE /* ModelCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelCardView.swift; sourceTree = "<group>"; };
+		42D66F0627BBE469006146BE /* CardVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardVM.swift; sourceTree = "<group>"; };
+		42D66F0827BC081D006146BE /* TopBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopBarView.swift; sourceTree = "<group>"; };
+		42D66F0A27BC0E0C006146BE /* BottomBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomBarView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +61,10 @@
 		42D66EEE27BBBA72006146BE /* TinderUI */ = {
 			isa = PBXGroup;
 			children = (
+				42D66F0127BBC027006146BE /* View */,
+				42D66F0027BBC01F006146BE /* ViewModel */,
+				42D66EFF27BBC016006146BE /* Model */,
 				42D66EEF27BBBA72006146BE /* TinderUIApp.swift */,
-				42D66EF127BBBA72006146BE /* ContentView.swift */,
 				42D66EF327BBBA73006146BE /* Assets.xcassets */,
 				42D66EF527BBBA73006146BE /* Preview Content */,
 			);
@@ -65,6 +77,33 @@
 				42D66EF627BBBA73006146BE /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		42D66EFF27BBC016006146BE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				42D66F0427BBE369006146BE /* ModelCardView.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		42D66F0027BBC01F006146BE /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				42D66F0627BBE469006146BE /* CardVM.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		42D66F0127BBC027006146BE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				42D66EF127BBBA72006146BE /* ContentView.swift */,
+				42D66F0227BBE214006146BE /* CardView.swift */,
+				42D66F0827BC081D006146BE /* TopBarView.swift */,
+				42D66F0A27BC0E0C006146BE /* BottomBarView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +176,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42D66F0727BBE469006146BE /* CardVM.swift in Sources */,
 				42D66EF227BBBA72006146BE /* ContentView.swift in Sources */,
+				42D66F0327BBE214006146BE /* CardView.swift in Sources */,
+				42D66F0527BBE369006146BE /* ModelCardView.swift in Sources */,
+				42D66F0927BC081D006146BE /* TopBarView.swift in Sources */,
+				42D66F0B27BC0E0C006146BE /* BottomBarView.swift in Sources */,
 				42D66EF027BBBA72006146BE /* TinderUIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

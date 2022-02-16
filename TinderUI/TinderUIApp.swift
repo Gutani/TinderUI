@@ -11,7 +11,7 @@ import SwiftUI
 struct TinderUIApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(cardStructure: VMCard())
         }
     }
 }
